@@ -2,52 +2,26 @@
 // Created by SirMathhman on 1/5/2020.
 //
 
-#include "stdio.h"
-
-typedef char *string;
-const int false = 0;
-const int true = 1;
-
-void pass() { printf("%s", "Pass"); }
-
-void fail(string message) {
-    printf("%s", "Fail: ");
-    printf("%s", message);
-}
-
-void assertFalse(int condition) {
-    if (condition) {
-        fail("Expected true condition.");
-    } else {
-        pass();
-    }
-}
-
-void assertTrue(int condition) {
-    if (!condition) {
-        fail("Expected false condition.");
-    } else {
-        pass();
-    }
-}
+#include "Main.h"
 
 void testAssertTrue() {
-    assertTrue(true);
+    assertTrue(1);
 }
 
 void testAssertFalse() {
-    assertFalse(false);
+    assertFalse(0);
 }
 
-void test(string name, void (*fun)()) {
-    printf("%s", name);
-    printf("%s", ": ");
-    fun();
-    printf("%s", "\n");
+void testAssertSame() {
+    int x = 10;
+    int *a = &x;
+    int *b = &x;
+    assertSame(a, b);
 }
 
 int main() {
-    test("AssertTrue", testAssertTrue);
-    test("AssertFalse", testAssertFalse);
+    assert("AssertTrue", testAssertTrue);
+    assert("AssertFalse", testAssertFalse);
+    assert("AssertSame", testAssertSame);
     return 0;
 }
