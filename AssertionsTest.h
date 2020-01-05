@@ -11,4 +11,4 @@
 
 #endif //MAGMAKERNELC_METAASSERT_H
 
-void metaAssert();
+void AssertionTest_test();

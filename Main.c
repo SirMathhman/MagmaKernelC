@@ -2,21 +2,16 @@
 // Created by SirMathhman on 1/5/2020.
 //
 
-#include "MetaAssert.h"
-#include "Instance.h"
+#include "AssertionsTest.h"
+#include "InstanceTest.h"
 #include "stdlib.h"
 
-void testInstance() {
-    int expected = 5;
-    Instance array = Instance_new(1);
-    Instance_set(array, 1, &expected);
-    int actual = *((int *) Instance_get(array, 1));
-    assertIntEquals(expected, actual);
-    free(array);
-}
+#include "ArrayTest.h"
+#include "Array.h"
 
 int main() {
-    assert("Instance", testInstance);
-    metaAssert();
+    AssertionTest_test();
+    InstanceTest_test();
+    ArrayTest_test();
     return 0;
 }

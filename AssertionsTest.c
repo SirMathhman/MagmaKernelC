@@ -2,7 +2,7 @@
 // Created by SirMathhman on 1/5/2020.
 //
 
-#include "MetaAssert.h"
+#include "AssertionsTest.h"
 
 void testAssertTrue() {
     assertTrue(1);
@@ -19,7 +19,7 @@ void testAssertSame() {
     assertSame(a, b);
 }
 
-void metaAssert() {
+void AssertionTest_test() {
     assert("AssertTrue", testAssertTrue);
     assert("AssertFalse", testAssertFalse);
     assert("AssertSame", testAssertSame);

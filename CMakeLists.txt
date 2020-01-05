@@ -3,4 +3,4 @@ project(MagmaKernelC C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(MagmaKernelC Main.c Core.h Assertions.c Assertions.h Main.h MetaAssert.c MetaAssert.h Instance.c Instance.h)
+add_executable(MagmaKernelC Main.c Core.h Assertions.c Assertions.h Main.h AssertionsTest.c AssertionsTest.h Instance.c Instance.h Array.c Array.h InstanceTest.c InstanceTest.h ArrayTest.c ArrayTest.h)
