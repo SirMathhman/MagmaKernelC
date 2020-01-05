@@ -18,3 +18,5 @@ void assertFalse(int condition);
 void assertTrue(int condition);
 
 void assertSame(void *expected, void *actual);
+
+void assertIntEquals(int expected, int actual);

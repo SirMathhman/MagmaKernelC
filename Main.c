@@ -2,26 +2,21 @@
 // Created by SirMathhman on 1/5/2020.
 //
 
-#include "Main.h"
+#include "MetaAssert.h"
+#include "Instance.h"
+#include "stdlib.h"
 
-void testAssertTrue() {
-    assertTrue(1);
-}
-
-void testAssertFalse() {
-    assertFalse(0);
-}
-
-void testAssertSame() {
-    int x = 10;
-    int *a = &x;
-    int *b = &x;
-    assertSame(a, b);
+void testInstance() {
+    int expected = 5;
+    Instance array = Instance_new(1);
+    Instance_set(array, 1, &expected);
+    int actual = *((int *) Instance_get(array, 1));
+    assertIntEquals(expected, actual);
+    free(array);
 }
 
 int main() {
-    assert("AssertTrue", testAssertTrue);
-    assert("AssertFalse", testAssertFalse);
-    assert("AssertSame", testAssertSame);
+    assert("Instance", testInstance);
+    metaAssert();
     return 0;
 }

@@ -40,3 +40,11 @@ void assertSame(void *expected, void *actual) {
         fail("Pointer values were not the same.");
     }
 }
+
+void assertIntEquals(int expected, int actual) {
+    if (expected == actual) {
+        pass();
+    } else {
+        fail("Integers are not equal.");
+    }
+}
