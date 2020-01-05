@@ -2,12 +2,12 @@
 // Created by SirMathhman on 1/5/2020.
 //
 
-#include "AssertionsTest.h"
-#include "InstanceTest.h"
+#include "test/AssertionsTest.h"
+#include "test/InstanceTest.h"
 #include "stdlib.h"
 
-#include "ArrayTest.h"
-#include "Array.h"
+#include "test/ArrayTest.h"
+#include "src/collect/Array.h"
 
 int main() {
     AssertionTest_test();

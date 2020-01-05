@@ -5,8 +5,8 @@
 #ifndef MAGMAKERNELC_INSTANCETEST_H
 #define MAGMAKERNELC_INSTANCETEST_H
 
-#include "Instance.h"
-#include "Assertions.h"
+#include "../src/obj/Instance.h"
+#include "../src/test/Assertions.h"
 
 #endif //MAGMAKERNELC_INSTANCETEST_H
 

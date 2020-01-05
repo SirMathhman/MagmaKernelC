@@ -5,8 +5,8 @@
 #ifndef MAGMAKERNELC_ARRAYTEST_H
 #define MAGMAKERNELC_ARRAYTEST_H
 
-#include "Array.h"
-#include "Assertions.h"
+#include "../src/collect/Array.h"
+#include "../src/test/Assertions.h"
 
 #endif //MAGMAKERNELC_ARRAYTEST_H
 

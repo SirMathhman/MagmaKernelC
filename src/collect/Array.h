@@ -5,7 +5,7 @@
 #ifndef MAGMAKERNELC_NATIVEARRAY_H
 #define MAGMAKERNELC_NATIVEARRAY_H
 
-#include "Instance.h"
+#include "../obj/Instance.h"
 
 #endif //MAGMAKERNELC_NATIVEARRAY_H
 

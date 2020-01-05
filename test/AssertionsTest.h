@@ -6,8 +6,8 @@
 #define MAGMAKERNELC_METAASSERT_H
 
 #include <stdio.h>
-#include "Core.h"
-#include "Assertions.h"
+#include "../src/Core.h"
+#include "../src/test/Assertions.h"
 
 #endif //MAGMAKERNELC_METAASSERT_H
 

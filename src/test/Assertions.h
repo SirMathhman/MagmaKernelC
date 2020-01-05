@@ -7,7 +7,7 @@
 #define MAGMAKERNELC_ASSERTIONS_H
 
 #include <stdio.h>
-#include "Core.h"
+#include "../Core.h"
 
 #endif //MAGMAKERNELC_ASSERTIONS_H
 
