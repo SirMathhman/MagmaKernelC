@@ -32,3 +32,10 @@ void Array$(Array array) {
     free(content(array));
     free(array);
 }
+
+void Array_copy(Array src, int srcPos, Array dest, int destPos, int length) {
+    for (int i = 0; i < length; ++i) {
+        Pointer pointer = Array_get(src, srcPos + i);
+        Array_set(dest, destPos + i, pointer);
+    }
+}

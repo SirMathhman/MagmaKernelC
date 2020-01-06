@@ -20,3 +20,5 @@ void Array_set(Array array, int index, Pointer value);
 int Array_length(Array array);
 
 void Array$(Array array);
+
+void Array_copy(Array src, int srcPos, Array dest, int destPos, int length);

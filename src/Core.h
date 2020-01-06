@@ -8,3 +8,4 @@
 #endif //MAGMAKERNELC_CORE_H
 
 typedef char *string;
+typedef int bool;

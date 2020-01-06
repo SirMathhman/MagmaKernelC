@@ -12,4 +12,4 @@ add_executable(MagmaKernelC
         src/collect/Array.c src/collect/Array.h
         test/AssertionsTest.c test/AssertionsTest.h
         test/InstanceTest.c test/InstanceTest.h
-        test/ArrayTest.c test/ArrayTest.h)
+        test/ArrayTest.c test/ArrayTest.h test/collect/ArrayListTest.c test/collect/ArrayListTest.h src/collect/ArrayList.c src/collect/ArrayList.h)

@@ -1,0 +1,8 @@
+//
+// Created by SirMathhman on 1/5/2020.
+//
+
+#ifndef MAGMAKERNELC_ARRAYLISTTEST_H
+#define MAGMAKERNELC_ARRAYLISTTEST_H
+
+#endif //MAGMAKERNELC_ARRAYLISTTEST_H
